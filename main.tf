@@ -15,6 +15,6 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name = "terraform-demo"
+  name = var.rg_name
   location = "EastUS"
 }
